@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "${{secrets.DOCKERHUB_PASSWORD}}" | docker login -u ${{secrets.DOCKERHUB_USERNAME}} --password-stdin
+      - run: echo "dckr_pat_zMD1wQwTx4E27pdYKBre0aiVUkU" | docker login -u ${{secrets.DOCKERHUB_USERNAME}} --password-stdin
