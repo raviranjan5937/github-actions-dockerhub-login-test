@@ -10,5 +10,5 @@ jobs:
 
     steps:
       - run: echo "${{secrets.DOCKERHUB_USERNAME}}"
-      - run: echo "$coy"
+      - run: echo "${{ env.coy }}"
       - run: echo "dckr_pat_aSPv5RG5OWs2LkCnlOqHEAjr0ts" | docker login -u raviranjan5937 --password-stdin
