@@ -1,0 +1,12 @@
+name: Dockerhub Login
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "dckr_pat_aSPv5RG5OWs2LkCnlOqHEAjr0ts" | docker login -u raviranjan5937 --password-stdin
